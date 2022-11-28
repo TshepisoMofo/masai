@@ -1,0 +1,1129 @@
+@font-face {font-family: "Audrey"; src: url("//db.onlinewebfonts.com/t/d9a58a393d946d86051fbd9a0b594d2f.eot"); src: url("//db.onlinewebfonts.com/t/d9a58a393d946d86051fbd9a0b594d2f.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/d9a58a393d946d86051fbd9a0b594d2f.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/d9a58a393d946d86051fbd9a0b594d2f.woff") format("woff"), url("//db.onlinewebfonts.com/t/d9a58a393d946d86051fbd9a0b594d2f.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/d9a58a393d946d86051fbd9a0b594d2f.svg#Audrey") format("svg"); }
+
+html{
+    width: 100%;
+    overflow-x: hidden !important;
+}
+
+body{
+width: 100%;
+    overflow-x: hidden !important;
+    background-color: #17181c;
+    color: #d1d4dc;
+    transition: background-color 1s ease; 
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .nav{
+    width: 100%;
+    position: fixed;
+    top:0;
+    background-color: #17181c;
+
+    z-index: 9999999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  padding: 2rem 4rem;
+    color: #CCDBDC;
+    border-bottom: 1px solid rgba(168,173,178,.5);
+  
+  }
+  .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      }
+     
+      .logo img{
+        width: 300px;
+        flex-shrink: 0;
+        overflow: hidden;
+        position: absolute;
+        left: 4%;
+     
+      }
+      .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+          }
+         
+          .logo img{
+            width: 300px;
+            flex-shrink: 0;
+            overflow: hidden;
+            position: absolute;
+            left: 4%;
+         
+          }
+  #PageWrap {
+    height: 100vh;
+    width: 300vw;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  #SectionA {
+
+  }
+  
+  #SectionC {
+    background: rgb(36, 36, 36);
+  }
+  
+  
+  .philosophie {
+    position: relative;
+
+    border-top: 1px solid rgba(168,173,178,.5);
+  }
+  
+  .indicators {
+    left: 2rem;
+    top: 0;
+    margin: 10vh 0;
+    height: 80vh;
+    width: 1px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    margin-left: 100px;
+    display: none;
+  }
+  
+  .indicator {
+    width: 100%;
+    background-color: #adadad;
+    flex-grow: 1;
+    margin: 2px 0;
+    display: none;
+  }
+  
+  .philosophie .point {
+    height: 100vh;
+    width: 100%;
+  display: grid;
+grid-template-columns: repeat(2,1fr);
+
+
+    justify-items: center;
+    margin-left:150px;
+  }
+  
+  .philosophie .wrapper {
+    height: 100vh;
+    width: 100%;
+  
+  }
+  
+  .point article {
+   flex-basis: 50%;
+    margin-right: auto;
+    border-right: 1px solid rgba(168,173,178,.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;;
+    gap:2rem;
+    
+  }
+  
+  .point img {
+    flex-basis: 25%;
+    max-width: 25vw;
+    height: auto;
+  
+  }
+  .contact{
+    height: 100vh;
+
+  }
+  .time-wrapper{
+    display: flex;
+    align-items: center;
+    gap:.5rem;
+    font-size: 1rem;
+    font-family: 'Gilmer Light';
+    letter-spacing: 1.5px;
+
+  }
+  #sectionA{
+    position: relative;
+
+
+}
+#SectionA article{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+ 
+
+   position: relative;
+  
+}
+#SectionA .wrapper{
+    border: 1px solid rgba(168,173,178,.2);
+    border-left: 0;
+ 
+    display: flex;
+
+    align-items: center;
+    position: relative;
+
+}
+#SectionA .wrapper .coord{
+
+    color:#a8adb2;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gilmer Light';
+    gap: 1rem;
+    letter-spacing: 1px;
+ font-size: 1rem;
+ position: absolute;
+ bottom: 4rem;
+right: 2rem;
+ width: 55%;
+ line-height: 1.55rem;
+}
+
+
+.wrapper button{
+
+
+  border: 1px solid #6c757d;
+  padding: .5rem;
+  background: #6c757d;
+  border-radius: 5px;
+  transition: background 200ms ease;
+  color: #eaeaea; 
+  font-family: 'Gilmer Light';
+margin-top: 2rem;
+font-size: 1.1rem;
+
+}
+
+  .wrapper button:hover {
+    background: rgba(51, 51, 51, 0.8); }
+    
+    
+
+#SectionA h1{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Audrey';
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 100;
+    font-size: 6.5rem;
+    z-index: 2;
+  
+}
+#SectionB{
+    position: relative;
+}
+#SectionB a{
+  position: absolute;
+  bottom: 10%;
+  text-decoration: none;
+  color: #a8adb2;
+  font-size: 1.2rem;
+  font-family: 'Gilmer Light';
+} 
+ .heading{
+    width: 100px;
+ 
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    border-right: 1px solid rgba(168,173,178,.5);
+    border-left: 1px solid rgba(168,173,178,.5);;
+    display: flex;
+    justify-content: center;
+  align-items: center;
+  flex-direction: column;
+    z-index: 10;
+    z-index: 999;
+    transition: all 0.3s ease;
+
+   
+
+  }
+  .heading h2{
+  
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 4rem;
+    font-family: 'Audrey';
+    font-weight: 100;
+    position: sticky;
+    transform: rotate(-90deg);
+   
+  }
+  #SectionB {
+
+position: relative;
+
+  }
+  #SectionB p{
+    font-size: 2rem;
+    font-family: 'Gilmer Light';
+    line-height: 3rem;
+
+  }
+  #SectionB .about-text{
+    height: 100%;
+    position: absolute;
+    top:45%;
+    left:50%;
+    transform: translate(-50%, -0%);
+
+  }
+
+ svg{
+    transform: scale(.7);
+    opacity: .5;
+}
+.wrapper h3{
+    font-family: 'Audrey';
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    font-weight: 100;
+
+  }
+  .philosophie .wrapper p{
+    font-family: 'Gilmer Light';
+    font-size: 1.1rem;
+    line-height: 2.55rem;
+    width: 85%;
+
+  }
+  #contact{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+border-top: 1px solid rgba(168,173,178,.5);;
+z-index: 999;
+
+  }
+  .section-article{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+   
+    
+    }
+    ul{
+        list-style-type: none;
+        line-height: 2rem;
+    }
+    #contact h3{
+        font-family: 'Audrey';
+    font-size: 1.8rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    }
+    
+    .address{
+        font-family: 'Gilmer Light';
+        font-size: 1rem;
+        line-height: 1.88rem;
+    }
+    #contact a{
+        font-family: 'Gilmer Light';
+        font-size: 1rem;
+        line-height: 1.88rem;
+        text-decoration: none;
+        color: #a8adb2;
+    }
+    footer{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid rgba(168,173,178,.5);
+        
+        
+    }
+    footer p{
+    padding: 2rem 0;
+    font-family: 'Gilmer Light';
+    }
+    .d-flex {
+        display: flex;
+        display: -webkit-flex;
+      }
+      .switch {
+        margin-bottom: 20px;
+        background: rgba(0, 0, 0, 0.1);
+        position: absolute;
+        bottom: 4rem;
+       right: 2rem;
+        width: 55%;
+        border-radius: 50px;
+        width: 200px;
+        transition: all 1.2s;
+        -webkit-transition: all 1.2s;
+
+        font-family: 'Gilmer Light';
+      }
+      .switch.checked {
+        background: #34323d;
+      }
+      .switch::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        background: #fff;
+        border-radius: 50px;
+        z-index: 1;
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+        -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+        transition: 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        -webkit-transition: 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      }
+      .switch input[type="checkbox"] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        cursor: pointer;
+      }
+      .switch span {
+        color: var(--black-color);
+        display: block;
+        width: 50%;
+        text-align: center;
+        padding: 10px;
+        z-index: 2;
+        text-transform: capitalize;
+      }
+      .switch.checked::before {
+        left: 50%;
+      }
+      .switch.checked .dark-txt {
+        color: #000;
+      }
+      
+     
+      :root {
+        --zIndex-overlay: 900;
+        --zIndex-navbar: 905;
+        --colors-text: white;
+        --colors-background: black;
+        --colors-contast: #f4e285;
+      }
+     
+      
+      
+   
+    
+      .title {
+        letter-spacing: 0.02em;
+        font-weight: 900;
+        font-size: 2rem;
+        text-transform: uppercase;
+        margin-top: 4rem;
+        letter-spacing: 1px;
+        font-weight: 100;
+      }
+ 
+      
+    
+#myBtn{
+  display: none;
+}
+   #SectionA .wrapper button{
+      color:#a8adb2;
+  
+      flex-direction: column;
+      font-family: 'Gilmer Light';
+    
+      letter-spacing: 1px;
+    font-size: 1rem;
+    display: inline-block;
+    transition: background 200ms ease;
+    line-height: 1.55rem;
+    position: fixed;
+    bottom: 4rem;
+    right: 2rem;
+    cursor: pointer;
+    }
+
+
+.volume{
+  background-color: transparent;
+  border: none;
+  font-size: 1.4rem;
+
+  margin-left: 2rem;
+  position: fixed;
+  bottom:4%;
+  left: 2%;
+  z-index: 99;
+  cursor: pointer;
+  
+}
+.volume-btn{
+  background-color: transparent;
+  border: 1px solid grey;
+  padding:1rem 2rem;
+  color:#d1d4dc;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: #17181c;
+}
+.scroll-btn{
+  background-color: transparent;
+  border: none;
+  font-size: 1.1rem;
+  color: #CCDBDC;
+  margin-left: 2rem;
+  position: fixed;
+  bottom:4%;
+  right: 2%;
+  z-index: 99;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-family: 'Gilmer Light';
+}
+.toggle-container{
+  position: fixed;
+  bottom:4%;
+  left: 2%;
+  z-index: 999999;
+  cursor: pointer;
+}
+.toggle-container ul{
+  list-style: none;
+  padding: 0;
+  margin: 0; 
+
+  
+}
+.toggle-container button {
+  border: 1px solid #6c757d;
+  padding: .8rem;
+  background: #6c757d;
+  border-radius: 5px;
+  transition: background 200ms ease;
+  color: #eaeaea; 
+  cursor: pointer;
+  font-size: 1.1rem;
+
+  font-family: 'Gilmer Light';
+
+}
+body.dark {
+  background-color: #d1d4dc;
+  color: #17181c; }
+
+  body.dark #SectionA .wrapper{
+    border: 1px solid rgba(168,173,178,1);
+    border-left: 0;
+ 
+    display: flex;
+
+    align-items: center;
+    position: relative;
+
+}
+body.dark
+.scroll-btn{
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+  color: #17181c;
+  margin-left: 2rem;
+  position: fixed;
+  bottom:4%;
+  right: 2%;
+  z-index: 99;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-family: 'Gilmer Light';
+}
+body.dark
+.heading{
+  width: 100px;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  border-right: 1px solid rgba(168,173,178,1);
+  border-left: 1px solid rgba(168,173,178,1);;
+  display: flex;
+  justify-content: center;
+align-items: center;
+flex-direction: column;
+  z-index: 10;
+  z-index: 999;
+  transition: all 0.3s ease;}
+  body.dark
+
+  #SectionB a{
+    position: absolute;
+    bottom: 10%;
+    text-decoration: none;
+    color: #17181c;
+    font-size: 1.2rem;
+    font-family: 'Gilmer Light';
+  } 
+    .st0{fill:none;stroke:#a8adb2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+
+    body.dark     .st0{fill:none;stroke:#17181c;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+    body.dark
+    #contact a{
+      font-family: 'Gilmer Light';
+      font-size: 1rem;
+      line-height: 1.88rem;
+      text-decoration: none;
+      color: #17181c;
+  }
+  body.dark .nav {
+    position: fixed;
+    color: inherit;
+      width: 100%;
+      height: 8vh;
+      z-index: 99;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px;
+      border-bottom: 1px solid rgba(168,173,178,.5);
+      /* background-color: #17181c; */
+      top:0;
+  background-color: #d1d4dc ;
+      transition: 1s;
+  }
+  #trans{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    pointer-events: none;
+    transform: scaleY(0);
+    position: absolute;
+    z-index: 100;
+
+
+}
+
+.loadText{
+    position: absolute;
+    transform-origin: center;
+    transform: translateX(-50%) translateY(-50%);    
+    left: 50%;
+    top: 50%;
+    z-index: 1000;  
+    color: white;
+    opacity: 1;
+}
+
+.left{
+    width: 50%;
+}
+
+.hamburger{
+  position: fixed;
+  top: 2%;
+  left: auto;
+  right: 4%;
+  width: 40px;
+  cursor:pointer;
+  z-index: 999;
+}
+
+.hamburger line{
+  stroke:#d1d4dc;
+  stroke-width: 6px;
+}
+
+.menu{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+  background-color:inherit;
+  visibility:hidden;
+
+  overflow: hidden;
+z-index: 99999;
+
+}
+.navigation{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+width: 100%;
+
+
+}
+.navigation ul{
+  margin: 0;
+padding: 5rem;
+width: 100%;
+}
+.navigation li{
+  list-style-type: none;
+  font-size:2.5rem;
+  margin-bottom:50px;
+} .navigation a{
+text-decoration: none;
+color: inherit;
+font-family: 'Gilmer Light';
+font-weight: 100;
+}
+.navigation a:hover{
+  color:black;
+}
+
+body.dark .hamburger line{
+  stroke:#17181c;
+  stroke-width: 9px;
+}
+
+.lock-scroll {
+  overflow: hidden;
+  position: fixed;
+}
+#dots, #dotss, #dotsss{
+  display: none;
+}
+
+#myBtnn, #myBtnnn{
+  display: none;
+  }
+
+.slogan{
+
+  transition: background-color 1s ease; 
+}
+
+body.dark .slogan{
+  background-color: #d1d4dc;
+
+}
+@media only screen and (max-width: 1200px){
+  /*Tablets [601px -> 1200px]*/
+}
+@media only screen and (max-width: 600px){
+/*Big smartphones [426px -> 600px]*/
+}
+@media only screen and (max-width: 425px){
+  #more {display: none;}
+
+
+  #morre, #morrre {display: none;}
+
+  #myBtn{
+  display: block;
+  }
+  #myBtnn, #myBtnnn{
+    display: block;
+    }
+  .philosophie .wrapper{
+    padding: 2rem;
+  }
+  .philosophie .wrapper p{
+    font-family: 'Gilmer Light';
+    font-size: 1rem;
+    line-height: 2.22rem;
+    width: 100%;
+   
+
+  }
+  .first-section, .second-section{
+    margin-left:2rem;
+    margin-top: 4rem;
+  }
+  
+}
+
+
+@media screen and (max-width: 786px) {
+       
+}
+
+
+
+
+@media only screen and (max-width: 1200px){
+  /*Tablets [601px -> 1200px]*/
+}
+@media only screen and (max-width: 600px){
+  #PageWrap {
+      height: 100%;
+      width: 100vw;
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+    }
+    body.dark   #PageWrap {
+      height: 100%;
+      width: 100vw;
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+    }
+    #SectionA{
+      width: 100vw;
+      height: 100vh;
+                }
+                #SectionB{
+                  width: 100vw;
+         height: 100vh;
+                }
+                body.dark  #SectionA{
+                  width: 100vw;
+                  height: 100vh;
+                            }
+                            #SectionB{
+                              width: 100vw;
+                     height: 100vh;
+                            }
+  /*Big smartphones [426px -> 600px]*/
+}
+@media only screen and (max-width: 425px){
+  /*Small smartphones [325px -> 425px]*/
+  #PageWrap {
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  body.dark   #PageWrap {
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  #SectionA{
+    width: 100vw;
+    height: 100vh;
+              }
+              body.dark  #SectionB{
+                width: 100vw;
+       height: 100vh;
+              }
+              body.dark  #SectionA{
+                width: 100vw;
+                height: 100vh;
+                          }
+                          #SectionB{
+                            width: 100vw;
+                   height: 100vh;
+                          }
+    #SectionB{
+      width: 100%;
+height: 100vh;
+margin-left: 0;
+padding: 0;
+
+    }
+    #SectionA h1, body.dark  #SectionA h1{
+position: absolute;
+top:50%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-family: 'Audrey';
+margin: 0 auto;
+text-align: center;
+font-weight: 100;
+font-size: 2.2rem;
+width: 100%;
+line-height: 5rem;
+z-index: 2;
+
+}
+.heading, body.dark .heading{
+width: 100%;
+height: 50px;
+border: 1px solid rgba(168,173,178,.5);
+
+
+}
+.heading h2, body.dark .heading h2{
+font-size: 2rem;
+transform: rotate(0deg);
+
+}
+#SectionB p, body.dark #SectionB p{
+font-size: 1rem;
+font-family: 'Gilmer Light';
+line-height: 1.2rem;
+width:100%;
+position: relative;
+line-height: 2.22rem;
+
+
+}
+#SectionB .about-text, body.dark #SectionB .about-text{
+height: 100%;
+position: absolute;
+top:80%;
+left:50%;
+transform: translate(-50%, -50%);
+width: 100%;
+margin-left: 0px;
+padding: 2rem;
+
+
+}
+#SectionB a, body.dark #SectionB a{
+position: absolute;
+bottom: 20%;
+text-decoration: none;
+color: #a8adb2;
+font-size: 1rem;
+font-family: 'Gilmer Light';
+margin-left: 0px;
+}
+.time-wrapper, body.dark .time-wrapper{
+display: none;
+}
+.logo img{
+width: 250px;
+}
+.switch{
+display: none;
+}
+.switch-toggle{
+display: block;
+}
+
+.point img {
+display: block;
+height: auto;
+
+}
+.point article {
+
+height: 100vh;
+margin-right: auto;
+border-right: 1px solid rgba(168,173,178,.5);
+display: block;
+flex-direction: column;
+align-items: center;
+justify-content: center;;
+gap:2rem;
+
+}
+.philosophie .wrapper {
+height: 100%;
+width: 100%;
+}
+.section-article{
+width: 100%;
+display: grid;
+grid-template-columns: repeat(1, 1fr);
+justify-items: self-start;
+
+
+
+} .philosophie .point {
+height: 100%;
+width: 100%;
+display: grid;
+grid-template-columns: repeat(1,1fr);
+justify-items: center;
+margin-left:0px;
+}
+.philosophie .point article{
+order: 2;
+height: 100%;
+border-right:none;
+
+}
+.philosophie .point svg{
+order: 1;
+height: 60vh;
+
+}
+#contact{
+height: 100vh;
+background-color:#17181c;
+color: #d1d4dc;
+}
+body.dark #contact{
+  background-color: #d1d4dc;
+  color: #17181c;
+}
+#more {display: none;}
+
+#dots, #dotss, #dotsss{
+  display: inline;
+}
+.wrapper h3{
+  font-family: 'Audrey';
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  font-weight: 100;
+  margin-bottom: 2rem;
+
+}
+body.dark .slogan{
+
+}
+body.dark #SectionB a{
+  position: absolute;
+  bottom: 10%;
+  text-decoration: none;
+  color: #17181c;
+  font-size: 1rem;
+  font-family: 'Gilmer Light';
+} 
+.navigation li{
+  list-style-type: none;
+  font-size:1.2rem;
+  margin-bottom:50px;
+  width: 100%;
+}
+.scroll-btn{
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  color: #CCDBDC;
+  margin-left: 0rem;
+  position: fixed;
+  bottom:4%;
+  right: 2%;
+  z-index: 99;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-family: 'Gilmer Light';
+}
+body.dark
+.scroll-btn{
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  color: #17181c;
+  margin-left: 0rem;
+  position: fixed;
+  bottom:4%;
+  right: 2%;
+  z-index: 99;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-family: 'Gilmer Light';
+}
+.toggle-container button {
+  border: 1px solid #6c757d;
+  padding: .5rem;
+  background: #6c757d;
+  border-radius: 5px;
+  transition: background 200ms ease;
+  color: #eaeaea; 
+  cursor: pointer;
+  font-size: 1rem;
+
+  font-family: 'Gilmer Light';
+
+}
+#contact h3{
+  font-family: 'Audrey';
+font-size: 1.4rem;
+font-weight: 100;
+letter-spacing: 1px;
+margin-bottom: 2rem;
+}
+.wrapper button{
+
+
+  border: 1px solid #6c757d;
+  padding: .5rem;
+  background: #6c757d;
+  border-radius: 4px;
+  transition: background 200ms ease;
+  color: #eaeaea; 
+  font-family: 'Gilmer Light';
+margin-top: 2rem;
+font-size: 1rem;
+letter-spacing: 1px;
+
+}
+.reveal {
+  visibility: hidden;
+  position: relative;
+  overflow: hidden;
+}
+}
+.reveal {
+  visibility: visible;
+  position: relative;
+  overflow: hidden;
+}
+
+.bigSwiper {
+  width: 100%;
+  height: 100%;
+}
+
+.bigSwiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.bigSwiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
