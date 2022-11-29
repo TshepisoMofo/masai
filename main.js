@@ -533,3 +533,29 @@ function myFunctionReadThree() {
 }
 
 
+
+Pace.on('done', function() {
+ 
+  $('.p').delay(500).animate({top: '30%', opacity: '0'}, 3000, $.bez([0.19,1,0.22,1]));
+
+
+  $('#preloader').delay(1500).animate({top: '-200%',opacity: '0'}, 3000, $.bez([0.19,1,0.22,1]));
+
+  $('.pace').delay(1500).animate({opacity: '0'}, 2000, $.bez([0.19,1,0.22,1]));
+      TweenMax.to(".text", 2, {
+          delay: 1.8,
+               y: 10,
+               opacity: 1,
+               ease: Expo.easeInOut
+         })
+         TweenMax.to(".time-wrapper", 2, {
+          delay: 1.8,
+               opacity: 1,
+               ease: Expo.easeInOut
+         })
+         TweenMax.to(".coord", 2, {
+          delay: 2,
+        opacity:1,
+               ease: Expo.easeInOut
+         })
+ });
